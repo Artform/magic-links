@@ -20,7 +20,7 @@ require("_session.php");
 	// Test the login and redirect
 	if ($do == 'login' && $p['user']) {
 		// Check if the email is valid
-		if ($p['user'] == 'am@artform.ca') {
+		if ($p['user'] == 'email@domain.com') {
 			echo "Making link";
 			$ip = $_SERVER['REMOTE_ADDR'];
 			$s = randomizer();

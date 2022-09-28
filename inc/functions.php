@@ -19,7 +19,7 @@ doe TIMESTAMP
 // For someone with an existing session
 function retrieveMagic($key,$user) {
 	// check DB for $key and $user record
-	if ($user == "am@artform.ca" && $key == "123") {
+	if ($user == "email@domain.com" && $key == "123") {
 		// return a unique string for session
 		return("43t7fguibjk23r");
 	}
@@ -29,7 +29,7 @@ function retrieveMagic($key,$user) {
 function checkMagic($magic) {
 	// Search DB for the magic ingredients
 	// Update the DOE (timestamp + 24h)
-	if ( ($magic['user'] == 'am@artform.ca') && ($magic['key'] == '1234') ) {
+	if ( ($magic['user'] == 'email@domain.com') && ($magic['key'] == '1234') ) {
 		return(true);
 	}
 
